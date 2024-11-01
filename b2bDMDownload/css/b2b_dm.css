@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "微軟正黑體";
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #757575;
+}
+
+img {
+    border: none;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4{
+    margin: 0;
+    padding: 0;
+}
+
+/*清除浮動*/
+.clean{
+    clear: both;
+    visibility: hidden;
+}
+
+body {
+    background-color: #fff;
+}
+
+#content-tool {
+    padding: 20px;
+    background: #fff;
+	max-width: 1400px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/*=====================當週DM下載=====================*/
+
+.dm-top {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.dm-top h1{
+    letter-spacing: .2rem;
+    font-size: 1.8rem;
+}
+
+.dm-download{
+    margin-top: 30px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.dm-pic p{
+    background-color: #8c001a;
+    color: #FFF;
+    padding: 6px 0;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 15px;
+    transition: .4s;
+}
+
+.dm-pic a:hover p{
+    background-color: #6d0014;
+}
+
+.owl-theme .owl-nav .disabled{
+    opacity: 0;
+}
+
+.owl-theme .owl-nav [class*='owl-'],
+.owl-theme .owl-nav [class*='owl-']:hover{
+    background: none;
+}
+
+
+.owl-prev,
+.owl-next{
+    position: absolute;
+}
+
+.owl-prev{
+    top: 42%;
+    left: -5.5%;
+}
+
+.owl-next{
+    top: 42%;
+    right: -5.5%;
+}
+
+
+
+/*=====================DM全覽=====================*/
+
+.flex-tool{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.dm-title{
+    width: 10%;
+    min-width: 150px;
+    margin-right: 1%;
+}
+
+.dm-title:after{
+    content: "";
+    width: 5px;
+    background-color: #acacac;
+    height: 40px;
+    display: inline-block;
+    margin-left: 15px;
+    vertical-align: middle;
+}
+
+.filter_type{
+    display: inline;
+    width: 50%;
+}
+
+.filter_type label {
+    min-width: 50px;
+    margin: 0 5px 5px 0;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.filter_type label:before {
+    content: url(../images/Exh_label_icon.png);
+    margin: 0 5px;
+}
+
+.filter_type .checked:before {
+    content: url(../images/Exh_checked_icon.png);
+    margin: 0 5px;
+}
+
+.dm-section{
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.dm-list{
+    border-bottom: 1px solid #c9c9c9;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+
+.dm-list h3{
+    color: #027dd4;
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+    width: calc(100% - 105px);
+}
+
+.dm-list p{
+    color: #757575;
+    border: 1px solid #757575;
+    border-radius: 15px;
+    padding: 5px 20px;
+    transition: .4s;
+    max-height: 33px;
+}
+
+.dm-list:hover p{
+    background-color: #8c001a;
+    border: 1px solid #8c001a;
+    color: #FFF;
+}
+
+
+
+/*=====================RWD=====================*/
+
+@media (max-width:1024px) {
+    .owl-prev{
+        left: -7.5%;
+        top: 38%;
+    }
+    .owl-next{
+        right: -7.5%;
+        top: 38%;
+    }
+    .filter_type{
+        width: 60%;
+    }
+}
+
+
+@media (max-width:768px) {
+    .filter_type {
+    width: calc(100% - 150px);
+    }
+    .owl-theme .owl-nav [class*='owl-']{
+        display: none;
+    }
+}
+
+
+@media (max-width:425px) {
+    .flex-tool{
+        flex-wrap: wrap;
+    }
+    .filter_type{
+        width: 100%;
+        margin-top: 15px;
+    }
+    .dm-list h3{
+        width: 100%;
+    }
+    .dm-list p{
+        margin-top: 8px;
+    }
+}
+

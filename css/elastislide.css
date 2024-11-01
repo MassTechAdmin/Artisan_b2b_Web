@@ -1,0 +1,67 @@
+/* Elastislide Style */
+.es-carousel-wrapper{
+	/*background: #101010;*/
+	padding-top:10px;
+	padding-right:25px;
+	padding-right:30px \9;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	position:relative;
+}
+.es-carousel ul{
+	display:block;
+}
+		
+.es-carousel{
+	overflow:hidden;
+	/*background:#000;*/
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.es-carousel ul{
+	display:none; margin: 0px; padding: 0px; list-style: none;
+}
+.es-carousel ul li{
+	height:100%;
+	margin: 0px 20px;
+	float:left;
+	display:block;
+	
+}
+.es-carousel ul li a{
+	display:block;
+	/*border-style:solid;
+	border-color:#222;*/
+}
+
+.es-carousel ul li a img{
+	display:block;
+	border:none;
+	max-height:100%;
+	max-width:100%;
+	padding-top:2px;padding-bottom:8px;padding-left:2px;padding-right:3px;
+	background-image: url(../images/index/bg_ad_banner.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.es-nav span{
+	position:absolute;
+	/*top: 50%;*/
+	top:26px;
+	/*left:12px;*/
+	background:transparent url(../images/nav.png) no-repeat top left;
+	width:14px;
+	height:26px;
+	/*margin-top:-10px;*/
+	cursor:pointer;
+	opacity:0.8;
+}
+.es-nav span.es-nav-next{
+	right:12px;width:14px;s
+	left:auto;
+	background-position:top right;
+}
+.es-nav span:hover{
+	opacity:1.0;
+}/**Ò»Á÷ËØ²ÄÍøwww.16sucai.com**/

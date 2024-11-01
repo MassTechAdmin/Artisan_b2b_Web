@@ -1,0 +1,273 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body {
+	 font-family:Microsoft JhengHei;
+	 font-family:微軟正黑體;
+}
+img {
+	border:0px;
+}
+.form_title {
+	color: #EE0000;
+	font-size: 25px;
+	text-align: left;
+	border-bottom-width: 5px;
+	border-bottom-style: solid;
+	border-bottom-color: #555555;
+	padding-bottom: 5px;
+	margin-bottom: 20px;
+}
+
+.form_tool {
+	margin-bottom: 40px;
+	width: 950px;
+	clear: both;
+	text-align: left;
+	font-size: 13px;
+	letter-spacing: 1px;
+}
+.member_title {
+	color: #EE0000;
+	font-size: 25px;
+	text-align: center;
+	border-bottom-width: 5px;
+	border-bottom-style: solid;
+	border-bottom-color: #999999;
+	padding-bottom: 5px;
+	margin-bottom: 20px;
+	width: 500px;
+ 	height: 20px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.member_tool {
+	margin-bottom: 40px;
+	width: 950px;
+	clear: both;
+	text-align: left;
+	font-size: 13px;
+	letter-spacing: 1px;
+}
+
+.formSearch_tool {
+	margin-bottom: 10px;
+	width: 950px;
+	clear: both;
+	text-align: left;
+	font-size: 13px;
+}
+.member_tool table {
+	line-height: 40px;
+	letter-spacing: 1px;
+}
+
+.form_tool table {
+	width: 950px;
+	font-size: 13px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-top-color: #CCC;
+	border-right-color: #CCC;
+	border-left-color: #CCC;
+	letter-spacing: 1px;
+}
+
+.form_tool table tr td {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #cccccc;
+	padding-left: 10px;
+	line-height: 40px;
+	padding-right: 10px;
+	font-family: "微軟正黑體";
+}
+.form_notice {
+	font-size: 12px;
+	line-height: 26px;
+}
+#button {
+	padding: 10px;
+	margin-top: 20px;
+}
+
+#stepList_tool {
+	width: 950px;
+	clear: both;
+}
+#stepList_tool {
+	width: 950px;
+	clear: both;
+	height: 26px;
+	font-size: 13px;
+	line-height: 26px;
+	margin-bottom: 20px;
+}
+.stepList01 {
+	float: left;
+	background-image: url(iconBG01.jpg);
+	line-height: 26px;
+	width: 121px;
+	text-align: left;
+	margin-right: 20px;
+	padding-left: 10px;
+}
+
+.stepList02 {
+	float: left;
+	background-image: url(iconBG02.jpg);
+	line-height: 26px;
+	width: 121px;
+	text-align: left;
+	margin-right: 20px;
+	padding-left: 10px;
+}
+
+#member_left {
+	float: left;
+	width: 133px;
+	line-height: 40px;
+	font-size: 13px;
+	margin-top: 20px;
+}
+.member_linkTop {
+}
+.member_linkTitle  {
+	background-color: #E5E5E5;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #898989;
+	border-left-color: #898989;
+	color: #F00;
+	line-height: 20px;
+	padding-bottom: 10px;
+}
+.member_link {
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #898989;
+	border-left-color: #898989;
+}
+
+.member_link a{
+    color:#000;
+	text-decoration:none;
+}
+
+.member_linkBottom {
+	background-image: url(member_bottom.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+#member_right {
+	float: right;
+	width: 800px;
+	margin-top: 20px;
+}
+.member_noticeTool {
+	border: 1px solid #898989;
+	text-align: left;
+}
+
+.member_noticeTitle {
+	color: #EE0000;
+	font-size: 25px;
+	text-align: center;
+	border-bottom-width: 5px;
+	border-bottom-style: solid;
+	border-bottom-color: #999999;
+	padding-bottom: 5px;
+	margin-bottom: 20px;
+	width: 750px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+}
+.member_noticeTxt {
+	line-height: 26px;
+	font-size: 13px;
+	width: 750px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+	letter-spacing: 1px;
+}
+.member_applyTitle {
+	color: #EE0000;
+	font-size: 25px;
+	text-align: left;
+	border-bottom-width: 5px;
+	border-bottom-style: solid;
+	border-bottom-color: #999999;
+	padding-bottom: 5px;
+	margin-bottom: 20px;
+	width: 750px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	height: 34px;
+}
+.member_applyTool table {
+	font-size: 13px;
+	line-height: 40px;
+	letter-spacing: 1px;
+}
+.member_applyTool table tr td {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.member_applyformTitle {
+	color: #EE0000;
+	font-size: 25px;
+	text-align: left;
+	border-bottom-width: 5px;
+	border-bottom-style: solid;
+	border-bottom-color: #999999;
+	padding-bottom: 5px;
+	width: 800px;
+	margin: 30px auto 20px;
+	height: 34px;
+}
+.member_applyformTool {
+
+}
+.member_applyformTool table {
+	font-size: 13px;
+	line-height: 40px;
+	letter-spacing: 1px;
+	border-top-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-left-style: solid;
+	border-top-color: #CCC;
+	border-left-color: #CCC;
+}
+
+.member_applyformTool table tr td {
+	padding-right: 5px;
+	padding-left: 5px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-right-color: #CCC;
+	border-bottom-color: #CCC;
+}
+.member_applyformOK {
+	background-image: url(applyOK.jpg);
+	height: 60px;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 13px;
+	padding-top: 35px;
+	padding-bottom: 35px;
+}

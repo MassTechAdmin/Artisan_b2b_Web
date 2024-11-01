@@ -1,0 +1,338 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="index2.aspx.cs" Inherits="index2" EnableEventValidation="false" %>
+<%@ Register Src="WebControl/Foot_19.ascx" TagName="Foot" TagPrefix="uc2" %>
+<%@ Register Src="WebControl/Header_Menu_19.ascx" TagName="Header" TagPrefix="uc1" %>
+<%@ Register Assembly="RadCalendar.Net2" Namespace="Telerik.WebControls" TagPrefix="radCln" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1, user-scalable=0" name="viewport" />
+    <title>凱旋旅行社(巨匠旅遊)同業網</title>
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.css" />
+    <link rel="stylesheet" href="css/layout_b2b_demo.css" />
+    <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/jquery.scrollbox.min.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="wrapper">
+            <!--b2b header-->
+            <header>
+                <nav>
+                    <uc1:Header ID="Header_Menu1" runat="server" />
+                </nav>
+            </header>
+            <!--/b2b header-->
+
+            <!--b2b alert-->
+            <div id="b2b-alert">
+                <asp:Literal ID="litHomeNews" runat="server"></asp:Literal>
+                <asp:Literal ID="litHomeBanner" runat="server"></asp:Literal>
+            </div>
+            <!--/b2b alert-->
+
+            <!--b2b top-->
+            <div id="b2b-top">
+                <div class="b2b-banner-news">
+                    <span>Final Call ‣‣‣ </span>
+                    <marquee direction="left" width="100%" align="botton" scrollamount="3"><asp:Literal ID="litnews" runat="server"></asp:Literal></marquee>
+                </div>
+                <div id="user-info">
+                    <asp:Literal ID="litUserInfo" runat="server" />
+                </div>
+            </div>
+            <!--/b2b top-->
+
+            <!--b2b main-->
+            <div id="b2b-content-index">
+
+                <!-- search -->
+                <div class="b2b-search-tool">
+                    <h1>團體旅遊</h1>
+                    <div class="b2b-search-area">
+                        <table width="0" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td class="search-title">出發日期</td>
+                                <td>
+                                    <asp:TextBox ID="txtDatePicker1" runat="server" CssClass="search-textBox"></asp:TextBox> <img src="images/b2b_calendar.png" alt="" style="width: 16px; height: 15px">
+                                    <asp:TextBox ID="txtDatePicker2" runat="server" CssClass="search-textBox"></asp:TextBox> <img src="images/b2b_calendar.png" style="width: 16px; height: 15px">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="search-title">系列</td>
+                                <td>
+                                    <asp:DropDownList ID="DropDownList0" runat="server" class="search-textBox">
+										<asp:ListItem Value="全部系列">全部系列</asp:ListItem>
+                                        <asp:ListItem Value="巨匠">巨匠</asp:ListItem>
+                                        <asp:ListItem Value="新視界">新視界</asp:ListItem>
+                                        <asp:ListItem Value="典藏">典藏</asp:ListItem>
+                                    </asp:DropDownList>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="search-title">目的地</td>
+                                <td>
+                                    <asp:DropDownList ID="DropDownList1" runat="server" AppendDataBoundItems="True" class="search-textBox" />
+                                    <asp:DropDownList ID="DropDownList2" runat="server" DataTextField="SecClass_Name" DataValueField="SecClass_No" class="search-textBox" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="search-title">關鍵字</td>
+                                <td>
+                                    <asp:TextBox ID="txbKey" runat="server" class="search-textBox" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" align="center">
+                                    <asp:Button ID="imgButton" runat="server" OnClick="imgButton_Click" Text="搜尋" class="search-box-btn" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <!-- /search -->
+
+                <!-- Hot Local -->
+                <div class="b2b-hot-local">
+                    <div class="hot-local-wrap">
+                        <div class="owl-local owl-carousel owl-theme">
+                            <asp:Literal ID="litBannerLeft" runat="server"></asp:Literal>
+                        </div>
+                        <div class="owl-local-contral">
+                            <ul>
+                                <asp:Literal ID="litBannerRight" runat="server"></asp:Literal>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Hot Local -->
+
+                <!-- Trip List -->
+                <div class="b2b-trip-list">
+                    <div class="trip-hand">
+                        <div class="gaint-select">
+                            <a href="">
+                                <h2>巨匠旅遊系列 </h2>
+                            </a>
+                        </div>
+                        <div class="luxe-select">
+                            <a href="">
+                                <h2>珍藏旅遊系列</h2>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="trip-wrap">
+                        <asp:Literal ID="litNot" runat="server"></asp:Literal>
+                    </div>
+                </div>
+                <!-- /Trip List -->
+
+                <!-- ADs -->
+                <div class="b2b-ads">
+                    <div class="sure" style="display: none;">
+                        <a href="">
+                            <img src="./images/sure.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="season_sale" style="display: none;">
+                        <a href="">
+                            <img src="./images/season_sale.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="ads_slider" style="margin-top: 0;">
+                        <div class="ad_backward"><img src="./images/arrow_up.png" alt=""></div>
+                        <div class="ad_forward"><img src="./images/arrow_down.png" alt=""></div>
+                        <div id="AD-Sale-scroll" class="scroll-text">
+                            <ul>
+                                <asp:Literal ID="litSB1" runat="server" />
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dm_download" style="display: none;">
+                        <a href="">
+                            <img src="./images/dm_download.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- adm -->
+                <div class="b2b-ads-m">
+                    <div class="sure_m" style="display: none;">
+                        <a href="">
+                            <img src="./images/sure_m.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="season_sale_m" style="display: none;">
+                        <a href="">
+                            <img src="./images/season_sale_m.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="dm_download_m" style="display: none;">
+                        <a href="">
+                            <img src="./images/dm_download_m.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <!-- /adm -->
+
+                <div class="owl-carousel owl-theme" id="owl-ads">
+                    <asp:Literal ID="litSB2" runat="server" />
+                </div>
+                <!-- /ADs -->
+            </div>
+            <!--/b2b main-->
+
+            <!--b2b footer-->
+            <uc2:Foot ID="Foot1" runat="server" />
+            <!--/b2b footer-->
+
+            <asp:HiddenField ID="hidArea_no" runat="server" />
+        </div>
+        <script>
+            $(document).ready(function () {
+                //alart 開關
+                $(".alert-list-btn").click(function () {
+                    $(this).parent().slideUp();
+                });
+                //廣告收合
+                var AD_main = $(".b2b-alert-AD");
+                var AD_wrap = $(".b2b-alert-AD-wrap");
+                var AD_wrap_btn = $(".alert-AD-btn");
+                AD_wrap_btn.click(function () {
+                    if (AD_wrap.is(":hidden")) {
+                        AD_wrap_btn.text("收合▲");
+                        AD_main.css("padding-top", "0");
+                    } else {
+                        AD_wrap_btn.text("展開▼");
+                        AD_main.css("padding-top", "30px");
+                    };
+                    AD_wrap.slideToggle();
+                });
+                // Hot Local
+                $('.owl-local').owlCarousel({
+                    loop: false,
+                    margin: 10,
+                    nav: false,
+                    dots: true,
+                    items: 1,
+                    responsiveClass: true,
+                    responsive: {
+                        1023: {
+                            dots: false
+                        }
+                    }
+                });
+                var owl_local = $('.owl-local');
+                owl_local.owlCarousel();
+                // Go to the next item
+                $('.loacl_1').hover(function () {
+                    owl_local.trigger('to.owl.carousel', 0);
+                });
+                $('.loacl_2').hover(function () {
+                    owl_local.trigger('to.owl.carousel', 1);
+                });
+                $('.loacl_3').hover(function () {
+                    owl_local.trigger('to.owl.carousel', 2);
+                });
+                $('.loacl_4').hover(function () {
+                    owl_local.trigger('to.owl.carousel', 3);
+                });
+                $('.loacl_5').hover(function () {
+                    owl_local.trigger('to.owl.carousel', 4);
+                });
+                $('.loacl_6').hover(function () {
+                    owl_local.trigger('to.owl.carousel', 5);
+                });
+                $('.loacl_7').hover(function () {
+                    owl_local.trigger('to.owl.carousel', 6);
+                });
+                $('.loacl_8').hover(function () {
+                    owl_local.trigger('to.owl.carousel', 7);
+                });
+                $('.loacl_9').hover(function () {
+                    owl_local.trigger('to.owl.carousel', 8);
+                });
+
+                var contral_on = $('.owl-local-contral ul li');
+                contral_on.hover(function () {
+                    $(this).addClass('on');
+                    $(this).siblings('li').removeClass('on');
+                });
+                // ads scrollbox
+                $('#AD-Sale-scroll').scrollbox({
+                    distance: 120,
+                    switchItems: 1
+                });
+                $('.ad_backward').click(function () {
+                    $('#AD-Sale-scroll').trigger('backward');
+                });
+
+                $('.ad_forward').click(function () {
+                    $('#AD-Sale-scroll').trigger('forward');
+                });
+
+                // ads-m owl
+                $('#owl-ads').owlCarousel({
+                    autoplay: true,
+                    loop: true,
+                    margin: 5,
+                    nav: true,
+                    navText: ["<img src='./images/arrow_prev.png'>", "<img src='./images/arrow_next.png'>"],
+                    dots: false,
+                    items: 1,
+                    responsive: {
+                        768: {
+                            items: 3
+                        }
+                    }
+                })
+
+                // ===== DropDownList1 start =====
+                $('#<%=DropDownList1.ClientID%>').change(
+                    function () {
+                        fn_group();
+                });
+
+                $('#<%=DropDownList2.ClientID%>').change(
+                    function () {
+                        $('#<%=hidArea_no.ClientID%>').val($('#<%=DropDownList2.ClientID%> option:selected').val());
+                });
+
+                var _areano = $('#<%=DropDownList1.ClientID%>').val();
+                if (_areano != "0") {
+                    fn_group();
+                } else {
+                    $('#<%=DropDownList2.ClientID%>').empty();
+                    $('#<%=DropDownList2.ClientID%>').append($("<option></option>").val("0").html("全選"));
+                }
+
+                function fn_group() {
+                    var _areano = $('#<%=DropDownList1.ClientID%>').val();
+                    $.ajax({
+                        type: 'post',//POST傳遞 GET取得
+                        dataType: "JSON",
+                        url: "Index_DDL_JSON.aspx",//傳遞參數到該頁面做處理
+                        data: { 'DropDownList1': _areano },//傳過去的參數
+                        success: function (data) {//若成功執行以下這段
+                            $('#<%=DropDownList2.ClientID%>').empty();
+                            $('#<%=DropDownList2.ClientID%>').append($("<option></option>").val("0").html("全選"));
+
+                            for (var i = 0; i < data.length; i++) {
+                                $('#<%=DropDownList2.ClientID%>').append($("<option></option>").val(data[i]["code"]).html(data[i]["name"]));
+                            }
+                        },
+                        error: function (xhr, ajaxOptions, thrownError) {
+                            alert(xhr.responseText);
+                        }
+                    })
+                }
+                // ===== DropDownList1 end =====
+            });
+        </script>
+    </form>
+</body>
+</html>

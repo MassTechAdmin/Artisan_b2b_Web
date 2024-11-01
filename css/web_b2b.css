@@ -1,0 +1,591 @@
+﻿@charset "UTF-8";
+
+/* CSS Document */
+
+.navTool .main_navTool:before,
+.navTool .main_navTool2:before {
+    top: -9px;
+}
+
+/*==================== 登入頁 ====================*/
+
+#b2b-content-default {
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+    padding: 30px;
+    margin-top: 100px;
+    box-sizing: border-box;
+}
+
+#b2b-login {
+    width: 100%;
+    overflow: hidden;
+    background: url(../images/b2b_login_shadow.jpg) center center no-repeat;
+    background-position: 45%;
+    font-family: "新細明體";
+    margin-bottom: 35px;
+}
+
+.login-box {
+    width: 46%;
+    float: left;
+    padding: 0 1% 0 12%;
+    font-size: 13px;
+    letter-spacing: 2px;
+    line-height: 28px;
+    box-sizing: border-box;
+}
+
+.login_box_red,
+.login_box_red a {
+    color: #dd3e2c;
+}
+
+.login_box_red a {
+    text-decoration: underline;
+}
+
+.login-info {
+    width: 54%;
+    float: left;
+    padding: 3% 4% 0 4%;
+    font-size: 13px;
+    line-height: 30px;
+    color: #666;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+}
+
+.info-link-name {
+    color: #c00000;
+}
+
+.info-link a {
+    text-decoration: underline;
+    color: #232323;
+}
+
+.info-link a:hover {
+    color: #ff9600;
+}
+
+#b2b-bannerBar {
+    width: 100%;
+    height: 190px;
+    overflow: hidden;
+    border: solid 1px #d7d7d7;
+    background: #f5f5f5;
+    background: linear-gradient(#f5f5f5, #fff);
+    position: relative;
+    padding: 10px 6%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.b2b-bannerPrev {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -38px;
+    cursor: pointer;
+}
+
+.b2b-bannerNext {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -38px;
+    cursor: pointer;
+}
+
+ul.b2b-bannerBar-tool {
+    width: 100%;
+    height: 168px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+ul.b2b-bannerBar-tool li {
+    width: 270px;
+    float: left;
+    margin: 0 12px;
+}
+
+ul.b2b-bannerBar-tool li img {
+    width: 100%;
+    height: auto;
+}
+
+#b2b-link {
+    width: 100%;
+    overflow: hidden;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+}
+
+.b2b-vision {
+    width: 45%;
+    min-height: 320px;
+    float: left;
+    padding: 20px 25px;
+    margin-right: 1%;
+    border: solid 1px #d7d7d7;
+    background: #f5f5f5;
+    background: linear-gradient(#f5f5f5, #fff);
+    box-sizing: border-box;
+}
+
+.b2b-vision ul {
+    padding-left: 15px;
+}
+
+.b2b-vision li {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 5px 0;
+}
+
+.b2b-vision li:before {
+    content: "＞";
+    margin-left: -15px;
+    padding-right: 0;
+}
+
+.b2b-vision h1 {
+    background: url(../images/b2b_vision.png) no-repeat;
+    width: 100%;
+    height: 36px;
+    margin-bottom: 15px;
+    border-bottom: solid 5px #004da4;
+}
+
+.b2b-exceptional {
+    width: 54%;
+    min-height: 320px;
+    float: left;
+    padding: 20px 25px;
+    border: solid 1px #d7d7d7;
+    background: #f5f5f5;
+    background: linear-gradient(#f5f5f5, #fff);
+    box-sizing: border-box;
+}
+
+.b2b-exceptional h1 {
+    background: url(../images/b2b_exceptional.png) no-repeat;
+    width: 100%;
+    height: 36px;
+    margin-bottom: 25px;
+    border-bottom: solid 5px #a40700;
+}
+
+.b2b-exceptional-left {
+    width: 34%;
+    float: left;
+    margin-right: 4%;
+}
+
+.b2b-exceptional_button {
+    text-align: center;
+}
+
+.b2b-exceptional_button span {
+    width: 10px;
+    height: 10px;
+    background-color: #bd0000;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.b2b-exceptional_button .active {
+    background-color: #000;
+}
+
+.b2b-exceptional-right {
+    width: 62%;
+    float: left;
+    margin-top: 50px;
+}
+
+.b2b-exceptional-right ul {
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+.b2b-exceptional-right li {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 5px 0;
+}
+
+.b2b-exceptional-right li:first-of-type {
+    padding-top: 10px;
+}
+
+.b2b-exceptional-right li:before {
+    content: "＞";
+    margin-left: -15px;
+    padding-right: 0;
+}
+
+
+/*==================== b2b首頁 ====================*/
+
+#b2b-content-index {
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+    padding: 15px;
+    margin-top: 100px;
+    box-sizing: border-box;
+}
+
+#b2b-left {
+    width: 77%;
+    float: left;
+    margin-right: 15px;
+    overflow: hidden;
+}
+
+ul#b2b-keyword {
+    width: 18%;
+    float: left;
+    /*background: #f5f5f5;*/
+    border: solid 1px #ccc;
+    font-size: 14px;
+    margin: 0 15px 15px 0;
+    box-sizing: border-box;
+}
+
+ul#b2b-keyword li {
+    width: 100%;
+    border-bottom: dashed 1px #a0a0a0;
+    box-sizing: border-box;
+    background: #eaeaea;
+}
+
+ul#b2b-keyword li:nth-of-type(odd) {
+    background: #ffdddd;
+}
+
+ul#b2b-keyword li:first-of-type {
+    padding-top: 2px;
+}
+
+ul#b2b-keyword li:last-of-type {
+    border: none;
+    padding-bottom: 2px;
+}
+
+/*
+ul#b2b-keyword li:hover {
+    background: #e5e5e5;
+}
+
+ul#b2b-keyword li:hover a {
+    color: #09C;
+}
+*/
+
+ul#b2b-keyword li a {
+    color: #7b7b7b;
+    padding: 9px 8px;
+    display: block;
+}
+
+ul#b2b-keyword li a:hover {
+    color: #0099cc;
+}
+
+#big-flash {
+    float: left;
+    width: 560px;
+    height: 385px;
+    margin: 0 15px 15px 0;
+}
+
+#vision-list {
+    width: 26%;
+    height: 385px;
+    border: 1px solid #26cbde;
+    float: left;
+    font-size: 13px;
+    color: #222222;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.vision-list-title {
+    font-size: 16px;
+    line-height: 30px;
+    color: #ffffff;
+    background-color: #26cbde;
+    background-attachment: fixed;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.vision-list-area {
+    padding: 4px 5px;
+    line-height: 16px;
+    letter-spacing: .05em;
+}
+
+.vision-list-area a {
+    color: #222;
+    text-decoration: none;
+}
+
+.vision-list-area a:hover {
+    color: #09C;
+    text-decoration: underline;
+}
+
+#user-info {
+    background: #f6f6f6;
+    width: 100%;
+    float: left;
+    border: 1px solid #cccccc;
+    height: 30px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #333;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+#b2b-special {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+#b2b-special table img {
+    width: 100%;
+    height: 120px;
+}
+
+#b2b-hotSale {
+    width: 100%;
+    height: auto;
+    padding: 10px 10px 25px 10px;
+    font-size: 13px;
+    color: #222;
+    background: #eee;
+    /*    background: linear-gradient(#f5f5f5, #fff);*/
+    box-sizing: border-box;
+}
+
+.b2b-hotSale-title {
+    width: auto;
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #ff962b;
+    float: left;
+    font-weight: bold;
+}
+
+.b2b-hotSale-title:after {
+    content: "";
+    width: 950px;
+    height: 5px;
+    margin-left: 10px;
+    background: #ff962b;
+    display: inline-block;
+}
+
+.b2b-hotSale-list {
+    width: 340px;
+    height: auto;
+    border: 1px solid #ccc;
+    background: #fff;
+    box-sizing: border-box;
+    padding-bottom: 5px;
+}
+
+.b2b-hotSale-list-title {
+    color: #fff;
+    background-color: #ccc;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 28px;
+    margin-bottom: 2px;
+}
+
+.b2b-hotSale-list-area {
+    padding: 4px 5px;
+    line-height: 16px;
+    letter-spacing: .05em;
+}
+
+.b2b-hotSale-list-area a,
+.b2b-hotSale-list-area2 a {
+    color: #222;
+    text-decoration: none;
+}
+
+.b2b-hotSale-list-area a:hover,
+.b2b-hotSale-list-area2 a:hover {
+    color: #09C;
+    text-decoration: underline;
+}
+
+.b2b-hotSale-list-area2 {
+    padding: 4px 5px;
+    line-height: 19px;
+    letter-spacing: .05em;
+}
+
+#b2b-right {
+    width: 21.9%;
+    overflow: hidden;
+    float: left;
+}
+
+#b2b-search-tool {
+    width: 100%;
+    border: 1px solid #cccccc;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.b2b-search-tool-title {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #a40000;
+    border-bottom: solid 5px #a40000;
+    margin: -5px 0 5px 0;
+}
+
+.b2b-search-tool-area {
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.b2b-search-tool-area img {
+    vertical-align: bottom;
+}
+
+#classic-list {
+    width: 100%;
+    height: 208px;
+    border: 1px solid #ff962b;
+    font-size: 13px;
+    color: #222;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.classic-list-title {
+    font-size: 16px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #ff962b;
+    background-attachment: fixed;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.classic-list-area {
+    padding: 4px 5px;
+    line-height: 16px;
+    letter-spacing: .05em;
+}
+
+.classic-list-area a {
+    color: #222222;
+    text-decoration: none;
+}
+
+.classic-list-area a:hover {
+    color: #09C;
+    text-decoration: underline;
+}
+
+#b2b-offer {
+	width: 100%;
+	margin-bottom: 12px;
+	border: 1px solid #ccc;
+	padding-top: 10px;
+	box-sizing:  border-box;
+}
+.b2b-offer-title {
+	font-size: 16px;
+	line-height: 30px;
+	font-weight:  bold;
+	color: #01888b;
+	border-bottom: solid 5px #01888b;
+	margin: -5px 10px 10px 10px;
+}
+.b2b-offer-title img {
+	margin: 7px;
+}
+.b2b-offer-area {
+	height: auto;
+	width: 100%;
+        line-height: 0;
+}
+
+.b2b-offer-area img {
+    width: 100%;
+    height: auto;
+}
+
+#b2b-travel {
+	height: auto;
+	width: 100%;
+	border: 1px solid #cccccc;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.b2b-travel-title {
+	font-size: 16px;
+	line-height: 30px;
+	color: #0085b6;
+	font-weight:  bold;
+	border-bottom: solid 5px #0085b6;
+	margin: -5px 0 10px;
+}
+
+.b2b-travel-area {
+	font-size: 12px;
+	line-height: 15px;
+	color: #010101;
+	border-bottom: dashed 1px #999;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+}
+
+.b2b-travel-area:last-of-type {
+    border: none;
+    padding:  0;
+    margin: 0;
+}
+
+.b2b-travel-area a {
+	text-decoration: none;
+	color: #010101;
+}
+
+.b2b-travel-area-point {
+	font-size: 14px;
+	line-height: 16px;
+	color: #0085b6;
+	margin-bottom: 1px;
+}

@@ -1,0 +1,155 @@
+﻿/* CSS Document */
+
+.style_exh_menu01
+ {
+	font-size: 17px;
+	color: #eba62f;
+	font-family: "微軟正黑體";
+	letter-spacing: 1px;
+	letter-spacing: 0px \9;
+	text-decoration:none;
+}
+
+.style_exh_menu01_change
+ {
+	font-size: 17px;
+	color: #ffffff;
+	font-family: "微軟正黑體";
+	letter-spacing: 1px;
+	text-decoration:none;
+}
+.style_exh_menu02 {
+	font-size: 11px;
+	color: #FFFFFF;
+	font-family: "微軟正黑體";
+	letter-spacing: 0px;
+	text-decoration:none;
+}
+.style_exh_menu03 {
+	font-size: 9px;
+	color: #696969;
+	font-weight: normal;
+	text-decoration:none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.style_exh_menu03_change {
+	font-size: 9px;
+	color: #fed190;
+	font-weight: normal;
+	text-decoration:none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.style_exh_list_title01 {
+	font-size: 22px;
+	color: #db1109;
+	font-weight: normal;
+	font-family: "微軟正黑體";
+}
+.style_exh_list_title02 {
+	font-size: 18px;
+	color: #8f8f8f;
+	font-weight: normal;
+	font-family: "微軟正黑體";
+}
+.style_exh_list_data {
+	font-size: 13px;
+	color: #363636;
+	font-weight: bold;
+	background-image: url(../images/exh/exh_list_dataBg.jpg);
+	background-repeat: no-repeat;
+	background-position: 10px;
+	float: left;
+	width: 500px;
+	padding-left: 28px;
+	letter-spacing: 1px;
+	font-family: "新細明體";
+}
+
+.style_exh_list_data a{
+	color: #2998da;
+}
+
+.style_exh_list_txt {
+	font-size: 13px;
+	color: #888787;
+	font-weight: normal;
+	float: left;
+	width: 528px;
+    letter-spacing:1px;
+    line-height:24px;
+	padding-left: 30px;
+	font-family: "新細明體";
+}
+
+.style_reminding_txt {color: #ca732d}
+.style_sort_select {color: #dd6207}
+.style_sort_select a{color: #dd6207}
+#LinkButton2 a{color: #dd6207}
+.style_white_blue {
+	color: #2795ce;
+}
+.style_gray_orange {color: #f14b19}
+.style_tour_characteristic_day_info_gray {
+	color: #b6b6b6;
+	font-size: 12px;
+	margin-right: 3px;
+	margin-left: 3px;
+	font-family: "Times New Roman", Times, serif;
+}
+.style_tour_characteristic_hotel_info {color: #0591c5}
+
+.style_exh_area {
+    color:#262111;
+    font-family: "新細明體";
+    font-size: 12px;	
+    float: left;
+    font-weight: bold;
+	text-decoration: none;
+}
+
+.style_exh_area a{
+    color:#262111;
+    font-family: "新細明體";
+    font-size: 12px;	
+    float: left;
+    font-weight: bold;
+	text-decoration: none;
+}.style_company_info_txt {color: #FF0000}
+.style_company_info_txt2 {
+	color: #6f6f6f
+}
+.style_member_strong {
+	color: #000000;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.style_member_gray {color: #999999}
+.style_tour_characteristic_hotel_gray{	font-weight: bold;color: #333333;}
+.style_escort_name1 {
+	color: #2c2d2d;
+	font-family: "微軟正黑體";
+	font-size: 26px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.style_escort_name2 {
+	color: #838383;
+	font-family: "微軟正黑體";
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.style_escort_info_green {
+	color: #76a324;
+	font-weight: bold;
+}
+
+.style_travel_link_cht {
+    font-size: 15px;
+	font-family: "微軟正黑體";
+}
+
+.style_travel_link {
+    font-size: 12px;
+}

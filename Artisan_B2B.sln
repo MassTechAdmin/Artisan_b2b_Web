@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Artisan_B2B", ".", "{7EE842BF-3FB0-48D2-9D77-2A91D92A93B8}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_62750"
+		Debug.AspNetCompiler.PhysicalPath = "..\Artisan_B2B\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62750\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_62750"
+		Release.AspNetCompiler.PhysicalPath = "..\Artisan_B2B\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62750\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "62750"
+		SlnRelativePath = "..\Artisan_B2B\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7EE842BF-3FB0-48D2-9D77-2A91D92A93B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EE842BF-3FB0-48D2-9D77-2A91D92A93B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C077DF3-8ADB-4DED-8236-C04681CE8884}
+	EndGlobalSection
+EndGlobal

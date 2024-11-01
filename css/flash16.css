@@ -1,0 +1,121 @@
+﻿	a img {
+		border: none;
+	}
+	#abgne_fade_pic {	
+	float:left;
+	width: 560px;
+	background: #000;
+	height: 385px;
+		}
+
+	#abgne_fade_pic a.ad {
+	position: absolute;	/* 讓圖片疊在一起 */
+	float: left;
+	}
+	#abgne_fade_pic .control {
+		position: absolute;
+                float: right;
+	        width: 550px;
+                margin-right:10px;
+                margin-top:350px;
+		text-align: right;
+	}
+	#abgne_fade_pic .control a {
+		display: inline-block;
+		padding: 3px;border-radius: 13px;
+		margin: 0 2px;
+		width: 13px;height:13px;
+		color: #fff;
+		background: #000;
+		text-align: center;
+		font-size: 12px;
+		text-decoration: none;font-family: Arial, Helvetica, sans-serif;
+	}
+	#abgne_fade_pic .control a.on {
+		font-weight: bold;
+		color: #FFFFFF;
+		border: 0px solid #5b381a;
+		background-color:#f40056;
+	}
+
+
+
+/* AD2 */
+
+
+	#abgne_fade_pic2 {	
+	float:left;
+	width: 235px;
+	background: #000;
+	height: 245px;
+		}
+
+	#abgne_fade_pic2 a.ad {
+	position: absolute;	/* 讓圖片疊在一起 */
+	float: left;
+	}
+	#abgne_fade_pic2 .control {
+		position: absolute;
+                float: left;
+                width:200px;
+                margin-left:70px;
+                margin-top:250px;
+	}
+	#abgne_fade_pic2 .control a {
+		display: inline-block;
+		padding: 1px;
+		margin: 0 3px;
+		width: 12px;height:12px;
+		color: #d9d9d9;
+		background: #d9d9d9;
+		text-align: center;
+		font-size: 1px;
+		text-decoration: none;
+	}
+	#abgne_fade_pic2 .control a.on {
+		font-weight: bold;
+		color: #f94a83;
+		background-color:#f94a83;
+	}
+
+
+/* AD3 */
+
+
+	#abgne_fade_pic3 {	
+	float:left;
+	width: 285px;
+	background: #000;
+	height: 135px;
+		}
+
+	#abgne_fade_pic3 a.ad {
+	position: absolute;	/* 讓圖片疊在一起 */
+	float: left;
+	}
+	#abgne_fade_pic3 .control {
+		position: absolute;
+                float: left;
+                width:200px;
+                font-size:0px;
+                margin-left:110px;
+                margin-top:120px;
+	}
+	#abgne_fade_pic3 .control a {
+		display: inline-block;
+		padding: 1px;
+		margin: 0 2px;
+		color: #333333;
+		width: 4px;height:4px;
+		background: #333333;
+		text-align: center;
+		font-size: 0px;
+		text-decoration: none;
+                border:solid 1px #666666;
+	}
+	#abgne_fade_pic3 .control a.on {
+		color: #CCCCCC;
+                font-size:0px;
+                border:solid 1px #666666;
+		background-color:#CCCCCC;
+	}

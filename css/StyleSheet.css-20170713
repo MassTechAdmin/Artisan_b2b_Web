@@ -1,0 +1,44 @@
+﻿a img {
+    border: none;
+}
+
+#abgne_fade_pic {
+    width: 795px;
+    height: 475px;
+    position: relative;
+}
+
+#abgne_fade_pic a.ad {
+    position: absolute; /* 讓圖片疊在一起 */
+}
+
+#abgne_fade_pic .trip_block {
+    position: absolute;
+    left: 10px;
+    bottom: 40px;
+}
+
+#abgne_fade_pic .trip_block a {
+    display: inline-block;
+    margin: 0 3px;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    text-align: center;
+    font-size: 1px;
+    text-decoration: none;
+    cursor: pointer;
+    background: #000;
+    width: 68px;
+    height: 8px;
+    float: left;
+    margin-left: 1px;
+    color: transparen;
+}
+
+#abgne_fade_pic .trip_block a.on {
+    font-weight: bold;
+    background: #000;
+    color: transparen;
+    opacity: 1;
+}
+

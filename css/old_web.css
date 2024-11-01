@@ -1,0 +1,348 @@
+﻿@charset "utf-8";
+
+#top_event_tool_old {
+	background-image: url(../images/old/topevent_bg.jpg);
+	margin-top: 20px;
+	height: 300px;
+	padding-top: 10px;
+	padding-left: 140px;
+	background-repeat: no-repeat;
+	background-position: left top;
+	color: #717171;
+	text-align: left;
+}
+.style_top_event_tool_old {
+	color: #8cb730;
+	font-size: 13px;
+	font-weight: bold;
+}
+.style_top_event_gray_old {
+	color: #717171;
+	font-size: 13px;
+	line-height: 22px;
+	letter-spacing: 2px;
+}
+.style_top_event_too_oldl  a{
+	color: #8cb730;
+
+}
+.style_top_event_gray_old  a{
+	color: #717171;
+
+}
+
+.NoNewline{
+	width:1125px;
+	overflow: hidden; /* 超過範圍隱藏 */
+        height:auto;
+	white-space: nowrap;
+	float: left;
+}
+
+/*-------------出團清單--------------*/
+#group_list{
+margin:40px 0 30px 0;
+padding:0;
+}
+
+.marquee{
+font:12px Arial, Helvetica, sans-serif, "新細明體";
+color:#666;
+background:#e1d6c8;
+margin:0 0 25px 0;
+padding:5px 0 3px 0;
+letter-spacing:1px;
+}
+
+#prodate {
+	border-bottom:1px #999 dashed;
+	width: 880px;
+	font:12px Arial, Helvetica, sans-serif, "新細明體";
+	margin:0;
+	padding:0;
+}
+.stylebluemark {
+	font-size: 12px;
+	color: #5b5b5b;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+.stylewhite {
+	font-size: 12px;
+	color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.stylenormal {
+	font-size: 12px;
+	color: #888;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.styleorange {
+	font-size: 12px;
+	color: #FF7800;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#left_button{
+	float:left;
+	padding:0;
+	background-position : right;
+	width:193px;
+	height:auto;
+	margin-right: 100px;
+	overflow: hidden;
+	background-color: #FFFFFF;
+	background-image: url(../images/old/list_bg.jpg);
+	background-repeat: no-repeat;
+}
+.button{
+margin:0;
+padding:0;
+width:191px;
+height:68px;
+border-bottom:1px #b6abab dashed;
+}
+
+/*---右邊共同---*/
+#main_right_tool{
+	float:left;
+	width:790px;
+	height:auto;
+	text-align:center;
+	margin-right: 40px;
+}
+.tour_divide2 {
+	float: left;
+}
+/*----共同結束----*/
+
+/*---行程介紹---*/
+/*----------------copy copy copy copy-----------------------*/
+.list_pic{
+margin:10px 0 0 6px;
+padding:0;
+text-align:left;
+}
+.list_flight{
+margin:0 0 0 6px;
+padding:0;
+text-align:left;
+}
+#list_flight_tool{
+margin:0px 0 0 6px;
+padding:20px 0px 10px 5px;
+font:12px Arial, Helvetica, sans-serif, "新細明體";
+color:#297091;
+text-align:left;
+background:url(images/old/flight-2.jpg) repeat-y;
+}
+.tour_text{
+margin:0;
+padding:0px 0 10px 10px;
+text-align:left;
+font:12px "新細明體";
+color:#555;
+line-height:18px;
+}
+.tour_blue{
+text-align:left;
+font:12px "新細明體";
+color:#52afd5;
+font-weight:bold;
+}
+
+/*----------------end end end end-----------------------*/
+/*--右邊行程--*/
+.tour_divide{
+*margin:20px 0 0 0px;
+	padding:0;
+	width:800px;
+	height:33px;
+	float: left;
+	margin-top: 20px;
+	margin-right: 0;
+	margin-bottom: 0;
+}
+.tour_divide2 {
+	width: 800px;
+	float: left;
+	text-align: left;
+}
+
+#fb-root
+{
+    text-align:right;
+    width:auto;
+    padding: 0 0 0 25px ;
+}
+
+.tour_characteristic{
+*margin:0 0 0 0px;
+	width:800px;
+	height:auto;
+	overflow:hidden;
+	float: left;
+}
+.tour_characteristic_tool{
+	margin:0;
+	width:790px;
+	height:auto;
+	overflow:hidden;
+	font:12px "新細明體";
+	color:#555;
+	letter-spacing:2px;
+	line-height:18px;
+	text-align:left;
+	float: left;
+	padding-top: 20px;
+	padding-right: 0;
+	padding-bottom: 5px;
+	padding-left: 0px;
+}
+.tour_characteristic_text{
+	font:13px "新細明體";
+	color:#945d38;
+	letter-spacing:2px;
+	font-weight:bold;
+	line-height:30px;
+	
+}
+.tour_characteristic_day{
+	padding:0px;
+	width:800px;
+	height:auto;
+	overflow:hidden;
+	text-align:left;
+	float: left;
+	margin-top: 30px;
+	margin-right: 0;
+	margin-bottom: 15px;
+	margin-left: 0;
+}
+.tour_characteristic_day_info{
+background:url(../images/old/tour4.jpg) repeat-y;
+margin:0px 0 0px 0;
+padding:0 0 0 15px;
+font:12px Arial, Helvetica, sans-serif, "新細明體";
+color:#bd4402;
+text-align:left;
+letter-spacing:2px;
+line-height:16px;
+}
+.tour_characteristic_hotel{
+	background:url(../images/old/tour3.jpg) no-repeat;
+	height:auto;
+	width:675px;
+	text-align:left;
+	font:12px Arial, Helvetica, sans-serif, "新細明體";
+	color:#7a7979;
+	letter-spacing:2px;
+	line-height:18px;
+	float: left;
+	margin-top: 15px;
+	margin-right: 0;
+	margin-bottom: 30px;
+	margin-left: 0;
+	padding-top: 12px;
+	padding-right: 0;
+	padding-bottom: 5px;
+	padding-left: 125px;
+}
+.tour_characteristic_text4{
+	margin:0;
+	padding:0;
+	font:12px "新細明體";
+	color:#815d3d;
+	text-align:left;
+	letter-spacing:2px;
+	font-weight:bold;
+/*	float: left;*/
+}
+.tour_divide_link{
+	width:800px;
+	border-bottom:1px #777 dashed;
+	float: left;
+	margin-top: 20px;
+}
+/*-------------------------end end end end --------------------------------*/
+#tour_explain{
+	color:#555;
+	letter-spacing:1px;
+	text-align:left;
+	float: left;
+	margin-top: 70px;
+	margin-right: 50px;
+	margin-bottom: 20px;
+	margin-left: 0;
+	padding-top: 8px;
+	padding-right: 5px;
+	padding-bottom: 8px;
+	padding-left: 20px;
+	width: 720px;
+	font-size: 12px;
+	background-image: url(../images/old/tour5.jpg);
+	background-repeat: repeat-y;
+}
+/*-------------------------end end end end --------------------------------*/
+#tour_other_tour{
+	padding:20px;
+	width:700px;
+	height:auto;
+	background-color:#f8f8f8;
+	border:1px #dedede solid;
+	font:12px;
+	color:#555;
+	text-align:left;
+	line-height:20px;
+	float: left;
+	margin-top: 0;
+	margin-right: 55px;
+	margin-bottom: 30px;
+	margin-left: 0;
+}
+#tour_other_tour_text{
+margin:0;
+padding:0 0 5px 0;
+border-bottom:1px #ccc dashed;
+font:13px;
+color:#d0570f;
+letter-spacing:2px;
+font-weight:bold;
+}
+#tour_other_tour_info{
+margin:10px 0 0 5px;
+padding:0;
+}
+#tour_other_tour_info a{
+color:#555;
+}
+
+
+.push_tour_tool{
+float:left;
+margin:0 0 0 13px;
+padding:3px;
+border:1px #CCCCCC solid;
+width:158px;
+height:auto;
+}
+.push_tour_data{
+float:left;
+margin:10px 0px 0 4px;
+padding:0;
+text-align:left;
+font:11px Arial, Helvetica, sans-serif, "新細明體";
+color:#696969;
+letter-spacing:1px;
+line-height:18px;
+width:140px;
+height:70px;
+}
+.push_tour_red{
+color:#b5282c;
+}
+.push_tour_pic{
+float:right;
+margin:10px 2px 0 0;
+padding:0;
+}

@@ -1,0 +1,552 @@
+﻿@charset "UTF-8";
+
+/* CSS Document */
+
+/*========================TripIntroduction========================*/
+
+#trip_content {
+    width: 1400px;
+    height: auto;
+    background: #fff;
+    overflow: hidden;
+    margin-top: 100px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.trip_name {
+    width: 100%;
+    padding-left: 180px;
+    box-sizing: border-box;
+    border-bottom: solid 5px #a00007;
+    margin-bottom: 12px;
+    position: relative
+}
+
+.trip_name h3 {
+    font-size: 28px;
+    width: 1020px;
+    padding: 15px 0;
+    display: inline-block;
+}
+.trip_share {
+    font-size: 12px;
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+}
+
+.trip_share:before {
+    content: url(../images/share_icon.png);
+    margin-right: 5px;    
+}
+
+
+/*行程標頭*/
+#travel_flash_tool {
+    width: 1300px;
+    height: 480px;
+    margin: 0 auto 10px;
+}
+
+.trip_slider {
+    width: 800px;
+    height: 480px;
+    position: relative;
+    float: left;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.trip_slider img {
+    width: 800px;
+    height: 480px;
+}
+
+.trip_block {
+    width: auto;
+    height: 8px;
+    margin: 0 2px;
+    position: absolute;
+    z-index: 9;
+    bottom: 40px;
+}
+
+.trip_block span {
+    background: rgba(0,0,0,.5);
+    width: 68px;
+    height: 8px;
+    float: left;
+    margin-left: 1px;
+}
+
+.trip_block .current {
+    background: #000;
+}
+
+.trip_slider p {
+    background: #222;
+    width: 800px;
+    height: 35px;
+    font-size: 13px;
+    line-height: 35px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    z-index: 9;
+    bottom: 0;
+} 
+
+.trip_slider p a {
+    color: #d43e3e;
+}
+
+.trip_list_tool {
+    width: 490px;
+    height: 480px;
+    float: right;
+}
+
+.trip_youtube {
+    width: 490px;
+    height: 285px;
+    margin-bottom: 10px;
+}
+
+.trip_list_link {
+    width: 100%;
+    height: 40px;    
+    font-size: 16px;
+    border-bottom: solid 15px #222;
+    margin-bottom: 10px;
+}
+
+.trip_list_link .btn1 {
+    width: 32.5%;
+    height: 38px;
+    margin-top: 2px;
+    float: left;
+    line-height: 40px;
+    background: #fff;
+    border: solid 1px #222;
+    box-sizing: border-box;
+    text-align: center;
+    margin-left: .5%;
+    box-shadow: inset 0px 3px 20px 0px rgba(30, 30, 30, 0.2);
+}
+
+.trip_list_link .btn1 a {
+    color: #222;
+    display: block;
+}
+
+.trip_list_link .btn1:first-child {
+    margin-left: 0;
+}
+
+.trip_list_link .current {
+    width: 34%;
+    height: 42px;
+    margin-top: -2px;
+    background: #222;
+    color: #fff;
+    box-shadow: 0px 5px 0px 0px rgba(19, 19, 19, 0.9);
+}
+
+.trip_list_link .current a {
+    color: #fff;
+    display: block;
+}
+
+.trip_list_icon {
+    width: 490px;
+    height: 120px;
+}
+
+.trip_list_icon div {
+    width: auto;
+    height: auto;
+    float: left;
+    border: solid 1px #ddd;
+    box-sizing: border-box;
+    line-height: 0;
+    margin: 0 1px 1px 0;
+}
+
+.trip_list_icon div:nth-child(3),
+.trip_list_icon div:nth-child(6) {
+    margin: 0;
+}
+
+.trip_list_icon img {
+    border: 0;
+}
+
+.travel_link_note {
+    color: #222;
+    letter-spacing: 1px;
+    text-decoration: none;
+    float: right;
+    width: 490px;
+    height: auto;
+    line-height: 18px;
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.travel_link_note a {
+    color: #a00007;
+    text-decoration: underline;
+}
+
+.trip_section {
+    width: 1200px;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto 10px;
+}
+
+.trip_area_title {
+    width: 100%;
+    height: 52px;
+    margin: 40px 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*行程航班*/
+.flight_info_tool {
+    width: 1200px;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333;
+    font-family: "Century Gothic","微軟正黑體";
+    margin-bottom: 10px;
+}
+
+.flight_info_tool td {
+    padding: 0 20px;
+    box-sizing: border-box;
+    border: solid 1px #d6d6d6;
+}
+
+.flight_info_tool .title {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;     
+}
+
+.flight_info_tool .note {
+    font-size: 12px;
+    padding: 30px 20px;
+    line-height: 18px;
+    box-sizing: border-box;
+    color: #424242;
+}
+
+.flight_info_tool .note span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.flight_info_download {
+    background: #f5f5f5;
+    width: 100%;
+    height: 35px;
+    font-size: 13px;
+    line-height: 35px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    color: #424242;
+}
+
+.flight_info_download a {
+    color: #00b8ec;
+}
+
+/*行程特色亮點*/
+.trip_feature {
+    width: 1200px;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+    line-height: 0;
+}
+
+.trip_feature p {
+    margin-bottom: 0;
+} 
+
+.trip_feature table{
+    margin: auto;
+    /*width: 100%;*/
+    /*height: auto;*/
+}
+
+/*每日行程*/
+.trip_day {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.trip_day_title {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.trip_day_number {
+    font-family: "Century Gothic","微軟正黑體";
+    font-size: 30px;
+    float: left;
+    width: 170px;
+    margin-right: 15px;
+}
+
+.trip_day_title h4 {
+    float: left;
+    width: 1015px;
+    font-size: 24px;
+    margin-top: 45px;
+}
+
+.trip_day_number span {
+    font-family: "Augustus","微軟正黑體";
+    font-size: 72px;
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.trip_day_content {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+
+.trip_day_left {
+    width: 570px;
+    height: auto;
+    float: left;
+    margin-right: 30px;
+}
+
+.trip_day_left span {
+    background: #000;
+    width: auto;
+    color: #fff;
+    line-height: 18px;
+    font-size: 14px;
+    display: inline-block;
+    padding: 5px 100px 5px 5px;
+    margin: 5px 0;
+}
+
+.trip_day_right {
+    width: 600px;
+    height: auto;
+    float: left;
+/*
+    font-size: 14px;
+    line-height: 24px;
+*/
+    overflow: hidden;
+    letter-spacing: 1px;
+}
+
+.trip_day_right h4 {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.trip_day_right span {
+    color: #a40008;
+}
+
+.trip_day_special {
+    margin: 20px 0 10px;
+}
+
+.trip_day_special h5 {
+    font-size: 20px;
+    color: #a40008;
+    font-family: "Century Gothic","微軟正黑體";
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.trip_day_special li {
+    text-indent: -6.5em;
+    margin: 0 0 0 6.5em;
+}
+
+.clear:before {
+    content: "";
+    clear: both;
+}
+
+.trip_day_info {
+    width: 1200px;
+    height: auto;
+    float: left;
+    overflow: hidden;
+    margin: 40px 0;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 1px;
+}
+
+.trip_day_info_tool {
+    width: 598px;
+    height: 145px;
+    padding: 40px;
+    margin-right: 2px;
+    float: left;
+    box-sizing: border-box;
+    background: url(../images/trip_day_info_bg.jpg) repeat-x;
+    border: solid 1px #ddd;
+}
+
+.trip_day_info_tool:last-child {
+    margin-right: 0px;
+}
+
+.trip_day_info_tool img {
+    margin-right: 20px;
+    float: left;
+}
+
+.trip_day_info_tool li:before {
+    content: url(../images/trip_day_icon.png);
+    display: inline-block;
+    width: 8px;
+    height: 9px;
+    margin-right: 10px;
+}
+
+/*貼心提醒*/
+.trip_remind {
+    width: 1200px;
+    height: auto;
+/*    text-align: center;*/
+    overflow: hidden;
+}
+
+.trip_remind a {
+    width: 150px;
+    background: #da346b;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: 15px 0 0 -2%;
+    padding: 2px 2%;
+    display: inline-block;
+}
+
+.trip_remind a:after {
+    content: url(../images/icon_02.png);
+    max-width: 18px;
+    height: auto;
+    display: inline-block;
+    vertical-align: text-top;
+    margin-left: 5px;
+}
+
+.trip_remind h3 {
+    color: #da346b;
+    margin-bottom: 10px;
+    position: relative;
+    width: max-content;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: initial;
+}
+
+.trip_remind h3:after,
+.trip_remind h3:before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 3px;
+    right: -30px;
+    width: 0;
+    height: 0;
+    border-radius: 10px;
+    border: 10px solid transparent;
+    border-left-color: #da346b;
+}
+
+.trip_remind h3:after{
+    margin-right: 5px;
+    border-left-color: #fff;
+}
+
+ol.trip_remind_area {
+    padding-left: 25px;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+
+ol.trip_remind_area li {
+    margin-bottom: 5px;
+    list-style: decimal;
+    list-style-position: outside;
+}
+
+ol.trip_remind_area li span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*側邊選單*/
+#icon_bar_close {
+    width: 55px;
+    height: 752px;
+    position: fixed;
+    top: 50%;
+    left: 10px;
+    z-index: 999;
+    margin-top: -376px;
+    line-height: 0;
+}
+
+#icon_bar_close img {
+    margin-bottom: 1px;
+    display: block;
+    float: left;
+}
+
+#icon_bar_open {
+    width: 218px;
+    height: 462px;
+    position: fixed;
+    top: 50%;
+    left: 10px;
+    z-index: 999;
+    margin-top: -231px;
+    line-height: 0;
+}
+
+#icon_bar_open img {
+    margin: 0 1px 1px 0;
+    display: block;
+    float: left;
+}
+
+#icon_bar_open div {
+    width: 100%;    
+}
+
+.icon_btn {
+    cursor: pointer;
+}

@@ -1,0 +1,75 @@
+﻿    div.dropdown {
+        color: #555;
+        width: 142px;
+        position: relative;
+        height: 17px;
+        text-align: center;
+    }
+    div.submenu, div.submenu2 {
+        /*background: #000;*/
+        position: absolute;
+        /*top: -12px;
+        left: -20px;*/
+        left: -10px;
+        z-index: 100;
+        width: 142px;
+        display: none;
+        margin-left: 10px;
+        margin-top:25px;
+        padding: 0px 5px 5px;
+        /*border-radius: 6px;*/
+        /*box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);*/
+        background-color:#000000;
+        opacity:0.8;
+        -moz-opacity:0.8;
+        -khtml-opacity:0.8;
+        filter:alpha(opacity=80);
+    }
+
+    .dropdown  li a {
+        color: #CCCCCC;
+        display: block;
+        font-family: arial;
+        padding-top:10px;padding-bottom:10px;
+        padding-top:12px \9;
+        text-decoration:none;
+        font-size:13px;
+        padding-left:28px;
+        letter-spacing: 2px;
+        text-align: left;
+        border-bottom:1px dashed #161616;
+        background: url(../images/exh/exh_menu_link.png) 10px 14px no-repeat;
+     
+    }
+
+    .dropdown li a:hover{
+        color: #FFFFFF;
+        text-decoration: none;
+        background: url(../images/exh/exh_menu_link_hover.png) 10px 14px no-repeat;
+
+    }
+    a.account a.account2 {
+        font-size: 11px;
+        line-height: 16px;
+        color: #555;
+        position: absolute;
+        z-index: 110;
+        display: block;
+        padding: 11px 0 0 20px;
+        height: 28px;
+        width: 131px;
+        margin: -11px 0 0 0px;
+        text-decoration: none;
+        background: url(../images/arrow.png) 120px 17px no-repeat;
+        
+    }
+
+    
+    .root {
+        list-style:none;
+        margin:0px;
+        padding:0px;
+        font-size: 11px;
+        padding: 11px 0 0 0px;
+        border-top:0px solid #dedede;
+    }

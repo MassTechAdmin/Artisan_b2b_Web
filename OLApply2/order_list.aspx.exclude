@@ -1,0 +1,168 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="order_list.aspx.cs" Inherits="order_list" %>
+
+<%@ Register Src="WebControl/Foot.ascx" TagName="Foot" TagPrefix="uc2" %>
+<%@ Register Assembly="RadCalendar.Net2" Namespace="Telerik.WebControls" TagPrefix="radCln" %>
+<%@ Register Src="WebControl/Header.ascx" TagName="Header" TagPrefix="uc1" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <link href="20151124.css" rel="stylesheet" type="text/css" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>凱旋旅行社(巨匠旅遊),歐洲旅遊,東歐旅遊,西歐旅遊,南歐旅遊,北歐旅遊,日本旅遊,紐西蘭旅遊,澳洲旅遊,中東旅遊,美國旅遊,加拿大旅遊,郵輪,非洲旅遊,歐洲自由行,南亞旅遊</title>
+    <link href="css/web_sale.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-artisan-130221.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/elastislide.css" />
+    <script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/Artisan_SubMenu.js"></script>
+     <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/trontastic/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <script>
+      $(function () {
+          $("#datepicker1").datepicker({ dateFormat: "yy/mm/dd" });
+          $("#datepicker2").datepicker({ dateFormat: "yy/mm/dd" });
+
+      });
+  </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="wrapper">
+        <uc1:header ID="Header1" runat="server" />
+        <div id="content">
+        <div style="text-align: center; width: 950px; margin-left: auto; margin-right: auto;">
+  <div class="form_title">查詢訂單進度</div>
+<div class="formSearch_tool">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="80" align="left" valign="middle">出 團 日 期</td>
+    <td width="441" align="left" valign="middle">&nbsp
+        <asp:TextBox ID="datepicker1" runat="server"></asp:TextBox>
+        　至<asp:TextBox ID="datepicker2" runat="server"></asp:TextBox>
+        　
+      </td>
+    <td width="167" align="right" valign="middle">報名狀態</td>
+    <td width="76" valign="middle">
+        <asp:DropDownList ID="DropDownList1" runat="server">
+            <asp:ListItem>全選</asp:ListItem>
+            <asp:ListItem Value="HK">機位確認</asp:ListItem>
+            <asp:ListItem Value="RQ">機位候補</asp:ListItem>
+        </asp:DropDownList>
+      </td>
+    <td width="128" align="left" valign="middle">&nbsp;<td width="56" align="right" valign="middle">
+      <asp:Button ID="Button1" runat="server" Text="查詢" Width="65px" OnClick="Button1_Click" Height="28px" />
+      </td>
+
+    </tr>
+</table>
+</div>
+
+<div class="formSearch_tool">
+    <div style="font-size:13px;letter-spacing:1px;margin-bottom:5px;border-top:1px solid #CCC;padding-top:20px;">
+
+
+    <br />
+&nbsp;<asp:GridView ID="GridView1" runat="server" BackColor="Silver" BorderColor="Silver" EmptyDataText="<p>尚未建立資料或未找到您所搜尋的資料</p>" BorderWidth="1px" CellPadding="3" GridLines="Vertical" OnRowDataBound="GridView1_RowDataBound" OnRowCommand="GridView1_RowCommand" AutoGenerateColumns="False" AllowPaging="True" AllowSorting="True" OnPageIndexChanging="GridView1_PageIndexChanging" PageSize="20" OnSorting="GridView1_Sorting" OnUnload="GridView1_Unload" Width="948px">
+                    <FooterStyle BackColor="#CCCCCC" ForeColor="Black" />
+                    <RowStyle BackColor="#FFFFFF" ForeColor="Black" />
+                    <Columns>
+                        <asp:ButtonField Text="SingleClick"  CommandName="SingleClick" Visible="False"/>
+                        <asp:TemplateField HeaderText="Number" SortExpression="Number" Visible="false" >
+                            <ItemTemplate>
+                             
+                            </ItemTemplate>
+                            <ItemStyle Width="85" />
+                        </asp:TemplateField>
+                        
+                        <asp:TemplateField HeaderText="下單時間"  ControlStyle-Width="75"  >
+                            <ItemTemplate>
+                                <asp:Label ID="Label2" runat="server" Text='<%#Eval("EnliI_Date", "{0:yyyy/MM/dd}")%>'></asp:Label>
+
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                          <asp:TemplateField HeaderText="出發日"  ControlStyle-Width="75" >
+                            <ItemTemplate>
+                                   <asp:Label ID="Label3" runat="server" Text='<%#Eval("Grop_Depa","{0:yyyy/MM/dd}")%>'></asp:Label>
+                                </td>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="團體旅遊名稱"  ControlStyle-Width="160" >
+                            <ItemTemplate>
+                             <asp:HyperLink ID="hlTripName" runat="server" NavigateUrl='<%# fn_RtnGridViewGrop_Name(Eval("Area_Code", "{0}"), Eval("Grop_Pdf", "{0}"), Eval("Trip_No", "{0}"), Eval("Grop_Depa", "{0:yyyy/MM/dd}"), Eval("Grop_Liner", "{0}"))%>' Text='<%#fn_RtnGridViewGroup_Name(Eval("Grop_Name","{0}"),Eval("Grop_Name","{0}"))%>' style="color: #00a9ef;"></asp:HyperLink>                             
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="備註"  ControlStyle-Width="70">
+                            <ItemTemplate>    
+                               <asp:Label ID="Label5" runat="server" Text='<%#Eval("Remark", "{0}")%>'></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="說明會<br>資料"  ControlStyle-Width="150" >
+                            <ItemTemplate>
+                               <img src="icon-info.png" width="16" height="16" align="absmiddle" />
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="報名<br>人數"  ControlStyle-Width="60">
+                            <ItemTemplate>
+                               <asp:Label ID="Label6" runat="server" Text='<%#Eval("BookPax", "{0}")%>'></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="報名單號</br>報名狀態"  ControlStyle-Width="140">
+                            <ItemTemplate>
+                                
+                                <asp:HyperLink ID="hlTripName" runat="server" NavigateUrl='<%#"Default2.aspx?no="+ Eval("netcustnumb") %>'  Text='<%#Eval("netcustnumb","{0}")%>' style="color: #00a9ef;"></asp:HyperLink>
+                                <br>
+                                <asp:Label ID="Label11" runat="server" Text='<%#check_reg(Eval("Reg_Status", "{0}"))%>'></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="訂金DL" ControlStyle-Width="75">
+                            <ItemTemplate>
+                               <asp:Label ID="Label8" runat="server" Text='<%#Down_pay_time(Eval("EnliI_Date", "{0}"))%>'></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="總額"  ControlStyle-Width="80">
+                            <ItemTemplate>
+                               <asp:Label ID="Label9" runat="server" Text='<%#Eval("total", "{0}")%>'></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="紀錄有無團費" Visible="false">
+                            <ItemTemplate>
+                                <%--<asp:Label ID="Label4" Width="25px" runat="server" Visible="false"  Text='<%#Eval("price", "{0}")%>'></asp:Label>--%>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        
+                    </Columns>
+                    <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="left"  />
+                    <SelectedRowStyle BackColor="#008A8C" Font-Bold="True" ForeColor="black" />
+                    <HeaderStyle BackColor="#EEEEEE" Font-Bold="True" ForeColor="black"  />
+                    <AlternatingRowStyle BackColor="#DCDCDC" />
+                </asp:GridView>
+
+<br />
+
+<div style="letter-spacing:1px;">報名單號前有<span style="color: #FF0000">*</span>為訂房需求價格有異動，請點<span style="color: #FF0000">報名單號</span>詳閱報名單計價或與<span style="color: #FF0000">當區業務</span>聯絡。</div><br>
+    
+</div>
+</div>
+            <div style="margin-bottom:40px;float:right;">&nbsp;
+　<asp:Button ID="Button2" runat="server" Text="兌換券" OnClick="Button2_Click" />
+　</div>
+           
+
+        </div>
+        <uc2:foot ID="Foot1" runat="server" />
+    </div>
+	<script type="text/javascript" src="js/jquery.elastislide.js"></script>
+	<script type="text/javascript">
+	    $('#carousel').elastislide({
+	        imageW: 221,
+	        minItems: 4,
+	        onClick: true
+	    });
+	</script>
+    </form>
+</body>
+</html>

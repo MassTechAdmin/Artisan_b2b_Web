@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#b2b-content-tool {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 10px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.dm-content {
+    font-family: "微軟正黑體";
+}
+
+.dm-top {
+    margin: 30px 0;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+h1.dm-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-right: 20px;
+    color: #000;
+    display: inline-block;
+    border-left: solid 15px #60c125;
+    padding: 0 10px;
+}
+
+.dm-select {
+    height: 30px;
+    width: 200px;
+    display: inline-block;
+    padding: 2px 12px;
+    margin: 5px 0;
+    font-size: 14px;
+    font-family: 'Microsoft JhengHei';
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+table.dm-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+table.dm-table,
+table.dm-table th,
+table.dm-table td {
+    border: 1px solid #dddddd;
+}
+
+table.dm-table tr:nth-of-type(odd) {
+    background: #eee;
+}
+
+table.dm-table th {
+    background-color: #305694;
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+}
+
+table.dm-table th:first-of-type {
+    width: 80px;
+}
+
+table.dm-table th:nth-of-type(2) {
+    text-align: left;
+}
+
+table.dm-table td {
+    padding: 10px;
+}
+
+table.dm-table td a {
+    color: #038bf4;
+    text-decoration: none;
+}
+table.dm-table td a:hover {
+    text-decoration: underline;
+}
+
+table.dm-table td:first-of-type {
+    color: #1f9205;
+    text-align: center;
+}
+
+@media (max-width:500px) {
+    h1.dm-title {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    table.dm-table th {
+        font-size: 16px;
+    }
+}

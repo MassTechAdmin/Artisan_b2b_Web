@@ -1,0 +1,29 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="DMdownload.aspx.cs" Inherits="DMdownload" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, user-scalable=0" name="viewport">
+    <title>凱旋旅行社(巨匠旅遊)同業網</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="css/dm_b2b.css">
+
+</head>
+<body>
+<form id="form1" runat="server">
+    <div id="wrapper">
+                <div id="b2b-content-tool" class="dm-content">
+            <div class="dm-top">
+                <h1 class="dm-title">直客DM下載</h1>
+                <asp:DropDownList runat="server" class="dm-select" ID="DropDownList1" AutoPostBack="true" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged"></asp:DropDownList>
+            </div>
+            <!--DM-->
+            <asp:Literal ID="Literal1" runat="server"></asp:Literal>
+            <!--DM end-->
+        </div>
+    </div>
+    </form>
+</body>
+</html>

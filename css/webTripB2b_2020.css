@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+
+/* 行程內頁天不fixed */
+
+html {
+	font-size: 16px;
+}
+
+body {
+    background-color: #fff;
+    font-family: Microsoft JhengHei, "微軟正黑體";
+    letter-spacing: .05em;
+}
+
+nav {
+    position: static;
+}
+
+#wrapper {
+    padding-top: 0;
+}
+
+nav#TripNav {
+    height: auto;
+}
+
+.container {
+    max-width: 1300px;
+}
+
+@media (max-width: 768px) {
+    /* 手機價錢下方報名隱藏 */
+    .orderTool-m {
+        visibility: hidden;
+    }
+}

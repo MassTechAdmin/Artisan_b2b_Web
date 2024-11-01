@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	 font-family:Microsoft JhengHei;
+	 font-family:微軟正黑體;
+}
+img {
+	border:0px;
+}
+.form_title {
+	color: #EE0000;
+	font-size: 25px;
+	text-align: left;
+	border-bottom-width: 5px;
+	border-bottom-style: solid;
+	border-bottom-color: #555555;
+	padding-bottom: 5px;
+	margin-bottom: 20px;
+}
+.form_tool {
+	margin-bottom: 40px;
+	width: 950px;
+	clear: both;
+	text-align: left;
+	font-size: 13px;
+	letter-spacing: 1px;
+}
+.formSearch_tool {
+	margin-bottom: 10px;
+	width: 950px;
+	clear: both;
+	text-align: left;
+	font-size: 13px;
+}
+.form_tool table {
+	width: 950px;
+	font-size: 13px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-top-color: #CCC;
+	border-right-color: #CCC;
+	border-left-color: #CCC;
+	letter-spacing: 1px;
+}
+
+.form_tool table tr td {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #cccccc;
+	padding-left: 10px;
+	line-height: 40px;
+	padding-right: 10px;
+}
+.form_notice {
+	font-size: 12px;
+	line-height: 26px;
+}
+#button {
+	padding: 10px;
+	margin-top: 20px;
+}
