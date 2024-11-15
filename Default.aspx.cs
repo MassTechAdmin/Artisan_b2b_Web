@@ -78,6 +78,7 @@ public partial class Default_b2b : System.Web.UI.Page
         strSql += " WHERE AGENT_L.AGT_IDNO = @AGT_IDNO";
         strSql += " AND AGENT_L.AGT_PW = @AGT_PW";
         strSql += " AND AGENT_L.AGT_IsVerify = 1";
+        strSql += " AND AGENT_M.Agent_IsHidden = ''";
         //strSql += " AND AGENT_M.AGT_Check = 'Y'";
 
         string constring = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["B2BConnectionString"].ToString();
@@ -133,7 +134,6 @@ public partial class Default_b2b : System.Web.UI.Page
                 comm5.Parameters.Add(new SqlParameter("@indexdate", DateTime.Today.ToShortDateString()));
                 comm5.ExecuteNonQuery();
                 comm5.Dispose();
-                connect.Close();
 
                 HttpCookie cookies = Request.Cookies["URLCOOKIE"];
                 if (cookies != null)
@@ -269,19 +269,19 @@ public partial class Default_b2b : System.Web.UI.Page
     {
         string strConnString = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["TRIPConnectionString"].ToString();
         SqlConnection conn = new SqlConnection(strConnString);
+        string strsql = "";
+        string str = "";
+
+        //新視界假期
+        strsql = " select * from NewVision";
+        strsql += " where Type = '1' order by OrderBY,Number desc";
 
         try
         {
             conn.Open();
 
-            string strsql = "";
-            string str = "";
-            strsql = " select * from NewVision";
-            strsql += " order by OrderBY,Number desc";
-
             SqlCommand comm = new SqlCommand(strsql, conn);
             SqlDataReader reader = comm.ExecuteReader();
-
             if (reader.HasRows)
             {
                 while (reader.Read())
@@ -293,7 +293,6 @@ public partial class Default_b2b : System.Web.UI.Page
                     str = "";
                 }
             }
-
             comm.Dispose();
             reader.Close();
         }
@@ -387,65 +386,56 @@ public partial class Default_b2b : System.Web.UI.Page
         //精選行程
         string strConnString = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["TRIPConnectionString"].ToString();
         SqlConnection conn = new SqlConnection(strConnString);
-        string strsql = "";
-        strsql  = " select top 13 *,Group_Category_Name";
-        strsql += " from Exceptional_Choices";
-        strsql += " left join Group_Category on GC_NO = Group_Category_No";
-        strsql += " where 1=1 ";
-        strsql += " and title <> ''";
-        strsql += " order by orderby";
+        string strSql = "";
+        string str = "";
+        int x = 0;
 
         try
         {
             conn.Open();
-            SqlCommand comm = new SqlCommand(strsql, conn);
-            SqlDataReader reader = comm.ExecuteReader();
 
-            while (reader.Read())
+            strSql = " select * from Mtn_Code where mtn_code = 'EC' order by cast(Mt_Code as int)";
+            SqlDataAdapter da = new SqlDataAdapter(strSql, strConnString);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            for (int i = 0; i < dt.Rows.Count; i++)
             {
-                litExImg.Text += "<img src='" + indexUrl + "Zupload16/new_web/" + reader["Pic"].ToString() + "' style='display: none;' alt='' border='0'>";
-                litSpan.Text += "<span></span> ";
+                strSql = " select top 3 * from Exceptional_Choices";
+                strSql += " where mtn_id = @mtn_id";
+                strSql += " order by orderby";
 
-                litExData.Text += "<ul style='display: none;'>　 " + reader["title"].ToString();
-                if (reader["Schedule_title1"].ToString() != "")
+                SqlCommand comm = new SqlCommand(strSql, conn);
+                comm.Parameters.Add(new SqlParameter("@mtn_id", dt.Rows[i]["mtn_id"].ToString()));
+                SqlDataReader reader = comm.ExecuteReader();
+
+                if (reader.HasRows)
                 {
-                    litExData.Text += "<li>";
-                    litExData.Text += "<a href='" + reader["Schedule_url1"].ToString() + "'>";
-                    litExData.Text += reader["Schedule_title1"].ToString() + "</a>";
-                    //if (!string.IsNullOrEmpty(Convert.ToString(Session["ID"]) + ""))
-                    //{
-                    //    litExData.Text += "<a href='" + reader["Schedule_url1"].ToString() + "'>";
-                    //    //litExData.Text += "<img src='images/icon_new.jpg' alt='new'>";
-                    //    litExData.Text += reader["Schedule_title1"].ToString() + "</a>";
-                    //}
-                    //else 
-                    //{ litExData.Text += reader["Schedule_title1"].ToString(); }
-                    litExData.Text += "</li>";
+                    litSpan.Text += "<span></span> ";
 
-                }
+                    if (i == 0) { litExData.Text += "<ul>　 " + dt.Rows[i]["descrip"].ToString(); }
+                    else { litExData.Text += "<ul style='display: none;'>　 " + dt.Rows[i]["descrip"].ToString(); }
 
-                for (int no = 2; no < 6; no++)
-                {
-                    if (reader["Schedule_title" + no.ToString()].ToString() != "")
+                    while (reader.Read())
                     {
+                        if (x == 0) { str = reader["Pic"].ToString(); }
+                        x += 1;
+
                         litExData.Text += "<li>";
-                        litExData.Text += "<a href='" + reader["Schedule_url" + no.ToString()].ToString() + "'>";
-                        litExData.Text += reader["Schedule_title" + no.ToString()].ToString() + "</a>";
-                        //if (!string.IsNullOrEmpty(Convert.ToString(Session["ID"]) + ""))
-                        //{
-                        //    litExData.Text += "<a href='" + reader["Schedule_url" + no.ToString()].ToString() + "'>";
-                        //    litExData.Text += reader["Schedule_title" + no.ToString()].ToString() + "</a>";
-                        //}
-                        //else 
-                        //{ litExData.Text += reader["Schedule_title" + no.ToString()].ToString(); }
+                        litExData.Text += "<a href='" + reader["Schedule_url1"].ToString() + "'>";
+                        litExData.Text += reader["Schedule_title1"].ToString() + "</a>";
                         litExData.Text += "</li>";
                     }
-                }
-                litExData.Text += "</ul>";
-            }
+                    litExData.Text += "</ul>";
+                    comm.Dispose();
+                    reader.Close();
 
-            comm.Dispose();
-            reader.Close();
+                    x = 0;
+
+                    if (i == 0) { litExImg.Text += "<img src='" + str + "' alt='' border='0'>"; }
+                    else { litExImg.Text += "<img src='" + str + "' style='display: none;' alt='' border='0'>"; }
+                }
+            }
         }
         catch { }
         finally { conn.Close();}
